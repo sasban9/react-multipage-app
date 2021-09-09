@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom"
+
 const Products = () => {
   return (
     <section>
       <h1>The Products Page</h1>
       <ul>
-        <li>Product 1</li>
-        <li>Product 2</li>
-        <li>Product 3</li>
+        <li><Link to="/products/p1">Product Book</Link></li>
+        <li><Link to="/products/p2">Product Carpet</Link></li>
+        <li><Link to="/products/p3">Product Beer</Link></li>
       </ul>
     </section>
   );
