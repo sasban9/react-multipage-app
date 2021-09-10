@@ -9,7 +9,11 @@ function App() {
   const history = useHistory();
   return (
     <Layout>
-      <button onClick={history.goBack} className="btn" >Back</button>
+      <section className="sorting" style={{ margin: "1rem 0" }}>
+        <button onClick={history.goBack} className="btn">
+          Back
+        </button>
+      </section>
       <Switch>
         <Route path="/" exact>
           <Redirect to="/quotes" />
