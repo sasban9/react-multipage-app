@@ -1,4 +1,4 @@
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch, useHistory } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import AllQuotes from "./pages/AllQuotes";
 import NewQuote from "./pages/NewQuote";
@@ -6,8 +6,10 @@ import NotFound from "./pages/NotFound";
 import QuoteDetail from "./pages/QuoteDetail";
 
 function App() {
+  const history = useHistory();
   return (
     <Layout>
+      <button onClick={history.goBack} className="btn" >Back</button>
       <Switch>
         <Route path="/" exact>
           <Redirect to="/quotes" />
