@@ -22,7 +22,7 @@ const NewQuote = () => {
   };
 
   return (
-    <QuoteForm isLoading={status == "pending"} onAddQuote={addQuoteHandler} />
+    <QuoteForm isLoading={status === "pending"} onAddQuote={addQuoteHandler} />
   );
 };
 
